@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperX</title>
+    <link rel="icon" type="image/x-icon" href="./image/logo.png">
+      <!-- google font -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet"
+      />
+    <link rel="stylesheet" href="main.css">
+    <style>
+        .headphoneanimation{
+            animation: 2s infinite linear headphone;
+        }
+        @keyframes headphone {
+            0%{
+                transform: translateY(0px);
+            }
+            50%{
+                transform: translateY(-60px);
+            }
+            100%{
+                transform: translateY(0px);
+            }
+            
+        }
+ .outer-circle{
+  border: 2px solid rgba(0, 0, 0, 0.458);
+  height: 24rem;
+  width: 24rem;
+  border-radius: 9999px;
+  position: relative;
+  display: flex;
+  transition-duration: 1000ms;
+  z-index: 0;
+  animation: spin 55s linear infinite;
+}
+
+.inner-circle{
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(227, 201, 255);
+  margin-top: 2rem;
+  margin-left: 2rem;
+  justify-self: center;
+  place-content: center;
+  border-radius: 9999px;
+  animation: spinReverse 55s linear infinite;
+}
+
+.most-inner-circle{
+  width: 13rem;
+  height: 13rem;
+  z-index: 20;
+  background-color: white;
+  border-radius: 9999px;
+  position: relative;
+  margin-top: 3.5rem;
+  margin-left: 3.5rem;
+  animation: spinReverse 55s linear infinite;
+}
+
+.circle1{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: 4rem;
+  right: 0.5rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle2{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  top: -1.25rem;
+  left: 11rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle3{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  top: 5rem;
+  right: 0.25rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle4{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  top: 5rem;
+  left: 0.25rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle5{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: 4rem;
+  left: 0.75rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle6{
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: white;
+  border-radius: 9999px;
+  position: absolute;
+  bottom: -1.25rem;
+  left: 10rem;
+  object-fit: cover;
+  animation: spin 55s linear infinite;
+}
+
+.circle7{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 40%;
+  top: -0.75rem;
+  background-color: white;
+  border-radius: 9999px;
+  animation: spin 55s linear infinite;
+}
+
+.circle8{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  left: 40%;
+  bottom: -0.75rem;
+  background-color: white;
+  border-radius: 9999px;
+  animation: spin 55s linear infinite;
+}
+
+.circle9{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  right: -0.75rem;
+  top: 40%;
+  background-color: white;
+  border-radius: 9999px;
+  animation: spin 55s linear infinite;
+}
+
+.circle10{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  top: 40%;
+  left: -0.75rem;
+  background-color: white;
+  border-radius: 9999px;
+  animation: spin 55s linear infinite;
+}
+
+@keyframes spin {
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spinReverse {
+  to{
+    transform: rotate(-360deg);
+  }
+} 
+    </style>
+</head>
+<body>
+ <body>
+   <!--nav bar-->
+   <nav class="bg-white  hidden md:block">
+    <div class=" font-mullish relative max-w-[1080px] flex mx-auto  items-center gap-x-6 justify-between">
+        <a herf="/" class="cursor-pointer">
+            <img src="./image/logo.png" alt="" loading="lazy hidden md:block">
+        </a>
+        
+        <ul class="flex gap-x-10 ">
+            <li class="text-black font-mullish py-7 hover:text-red-500 cursor-pointer
+            transition-all duration-200 relative group ">
+                <a href="#">SALE</a>
+                <div class="absolute bottom-0 w-full h-1 bg-red-800 hidden group-hover:block
+                transition-all duration-200" ></div>
+            </li>
+            <li class="text-black font-mullish py-7 hover:text-red-500 cursor-pointer
+            transition-all duration-200 relative group ">
+                Shop By Category
+                <div class="absolute bottom-0 w-full h-1 bg-red-800 hidden group-hover:block
+                transition-all duration-200" ></div>
+            </li>
+            <li class="text-black font-mullish py-7 hover:text-red-500 cursor-pointer
+            transition-all duration-200 relative group ">
+                Student Discount
+                <div class="absolute bottom-0 w-full h-1 bg-red-800 hidden group-hover:block
+                transition-all duration-200" ></div>
+            </li>
+            <li class="text-black font-mullish py-7 hover:text-red-500 cursor-pointer
+            transition-all duration-200 relative group ">
+                Explore
+                <div class="absolute bottom-0 w-full h-1 bg-red-800 hidden group-hover:block
+                transition-all duration-200" ></div>    
+            </li>
+            <li class="text-black font-mullish py-7 hover:text-red-500 cursor-pointer
+            transition-all duration-200 relative group ">
+                Support
+                <div class="absolute bottom-0 w-full h-1 bg-red-800 hidden group-hover:block
+                transition-all duration-200" ></div>
+            </li>
+        </ul>
+        <button class="py-3 px-5 border-red-500 border rounded-sm text-sm font-bold hover:bg-slate-500 transition-all duration-200">
+            Buy Now
+
+        </button>
+    </div>
+
+   </nav>
+
+   <!--hero-section-->
+   <section class="relative bg-red-400 gap-10">
+    <div  class="relative w-10/12 max-w-[1080px] flex flex-col md:flex-row mx-auto items-center justify-between">
+        <!--content-->
+       
+            <!--left part-->
+            <div class=" relative flex flex-col">
+                <h1 class="text-black text-bold font-mullish text-3xl py-32 leading-10"> Welcome to New Gaming World <br> Discover your new skill with new Gears</h1>
+                <button class=" bg-black py-3 px-5 absolute items-start top-1/2 border-red-500 border rounded-sm text-sm font-bold hover:bg-slate-500 text-white transition-all duration-200">
+                    View Gears
+        
+                     </button>
+                <h2 class=" text-black text-bold font-mullish text-2xl py-28 text-[32]">Welcome to the Future of Gaming:<br>Unveiling HyperX's Infinite Power and Unmatched Performance!</h2>
+           
+               
+           </div>
+           <!--right part-->
+
+            <!--image-->
+            <div>
+
+              <img src="./image/studio.png" alt="hyperxst" loading="lazy"
+               class="rounded-md">
+            </div>
+
+        
+    </div>
+   </section>
+
+   <!--headphone section-->
+   <section>
+    <div class=" w-10/12 max-w-[1080px] flex flex-col md:flex-row relative mx-auto items-center justify-center pt-16 gap-x-10">
+          <!--content-->
+          <!--left part-->
+          <img src="./image/headphone (2).png" alt="headphone" loading="lazy" width="50%" height="50%" class="headphoneanimation left-[600px]  ">
+          <!--right part-->
+
+
+        <div class="flex flex-col mx-auto items-center justify-center right-[300px] ">
+          <h1 class="text-bold text-3xl leading-1.2"> Where Impeccable Sound Meets Unrivaled Comfort</h1>
+          <p class="font-mullish text-2xl py-10">
+            Elevate your auditory senses with the unparalleled excellence of HyperX headphones. Immerse yourself in a realm where every beat, every note, and every whisper of sound comes to life in exquisite clarity. Our headphones aren't just accessories; they're gateways to new dimensions of audio perfection.<br>  </p>
+
+            <!-- Crafted with precision and engineered for the discerning audiophile, HyperX headphones boast a symphony of advanced technologies that deliver a symmetrical fusion of deep, resonant bass and crisp, soaring highs. Feel the music pulse through you, as our ergonomic design ensures hours of comfort, allowing you to lose yourself in your playlist without losing touch with comfort.
+            
+            Whether you're diving into a captivating gaming universe, delving into your favorite tunes, or enjoying a cinematic experience, HyperX headphones cocoon you in a private oasis of sound. Discover a world where noise fades away, leaving only you and your chosen soundscape. -->
+
+            
+           <p class="font-mullish text-bold leading-[1.2] text-2xl">  Choose more than just headphones; choose a lifestyle of sonic brilliance. Elevate your expectations – elevate your senses – with HyperX. Your ears deserve nothing less.</p>
+
+          
+        </div>
+    </div>
+   </section>
+
+   <!--section 2 bg -->
+   <section class="bg-[url(./image/bg.png)] bg-no-repeat bg-cover pb-[500px] mt-14 pt-[20rem] ">
+  
+    <div class=" relative flex flex-col justify-center items-center gap-y-52 ">
+        <!--content-->
+        <h1 class=" absolute text-white font-mullish text-3xl px-1 ">Enchance Your Skill With New Gears</h1>
+        <!-- <div>
+        <button class=" bg-black py-3 px-3 absolute items-start  border-red-500 border rounded-sm text-sm font-bold hover:bg-slate-500 text-white transition-all duration-200">
+            View items
+
+             </button>
+            </div> -->
+       
+    </div>
+ 
+
+   </section>
+   <!--items round animation-->
+   <section>
+    <div class="w-10/12 max-w-[1080px] flex flex-col md:flex-row relative mx-auto items-center justify-center pt-16 gap-x-10">
+        <!--left-->
+        <div class=" relative w-1/2  ">
+            <h2 class="text-black text-bold font-mullish text-3xl py-12 leading-10">Explore Unbeatable Gears from Unbeatable Brand</h2>
+            <button class=" bg-red-500 py-3 px-5 absolute items-start md:top-1/2 border-red-500 border rounded-sm text-sm font-bold hover:text-black text-white transition-all duration-200 ">
+                Explore More 
+    
+                 </button>
+            <p class="font-mullish text-2xl pt-10">Unleash Your Inner Legend: HyperX Gaming Products - Where Precision Meets Domination in Every Click, Command, and Conquest</p>
+           
+
+        </div>
+        <!--right part-->
+        <div class="w-1/2">
+            <div class="skills">
+                <div class="mx-auto">
+                  <div class=" flex justify-center items-center">
+                    <div class="outer-circle">
+                      <div class="circle1">
+                        <img src="./image/headphone (2).png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+                      <div class="circle2">
+                        <img src="./image/keyboard (2).png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+                      <div class="circle3">
+                        <img src="./image/mic2.png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+                      <div class="circle4">
+                        <img src="./image/mouse (2).png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+                      <div class="circle5">
+                        <img src="./image/ram (2).png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+                      <div class="circle6">
+                        <img src="./image/ssd.png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                      </div>
+        
+                      <div class="inner-circle">
+                        <div class="most-inner-circle">
+                          <div class="circle7">
+                            <img src="./image/head2.png"  width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                          </div>
+                          <div class="circle8">
+                            <img src="./image/hy1.jpg"  width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                          </div>
+                          <div class="circle9">
+                            <img src="./image/key2.jpg"  width="100%" height="100%" class="mx-auto flex mt-6px scale-150">                    
+                          </div>
+                          <div class="circle10">
+                            <img src="./image/mic (2).png" width="100%" height="100%" class="mx-auto flex mt-6px scale-150">
+                          </div>
+                        </div>
+                      </div>
+        
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+        
+            </div>
+
+
+    </div>
+    </section>
+
+
+    <!--last section-->
+    <section>
+        <div class="w-10/12 max-w-[1080px] flex flex-col relative mx-auto items-center justify-center pt-16 gap-x-10  gap-y-12">
+               
+            <!--image 1 line -->
+            <div class="flex mx-auto justify-between">
+            <img src="./image/section.png" alt="image" width="50%" class="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer">
+            <img src="./image/Screenshot_20230817_213145.png" alt="image" width="50%" class="grayscale hover:grayscale-0 transition-all duration-200 cursor-pointer">
+           </div>
+
+            <!--2nd line-->
+
+            <div class=" w-10/12 flex gap-x-28 justify-center">
+                <div class="w-1/3 flex flex-col gap-y-6 items-center justify-center border  border-red-900 px-2 hover:bg-red-400 transition-all duration-200 cursor-pointer">
+                <img src="./image/dolly-solid.svg " width="50%" alt="basket" class="mt-10 ">
+                <p>Free Standard Shipping on most Orders</p>
+                </div>
+                <div class="w-1/3 flex flex-col gap-y-6 items-center justify-center border  border-red-900 px-2 hover:bg-red-400 transition-all duration-200 cursor-pointer ">
+                <img src="./image/arrow-rotate-left-solid.svg" width="50%" alt="return"  class="mt-10">
+                <p>30-Day Hassle-Free Product Return</p>
+                </div>
+                 <div class="w-1/3 flex flex-col gap-y-6 items-center justify-center border border-red-900 px-2 hover:bg-red-400 transition-all duration-200 cursor-pointer">
+                <img src="./image/handshake-angle-solid.svg" width="50%" alt="help"  class="mt-10">
+                <p>Free and Easy Technical Support</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    
+
+    <!--footer-->
+    <footer class=" px-4 py-10">
+        <div class="w-10/12 max-w-[1080px] relative   pt-16 gap-x-10">
+            <div class="flex flex-col justify-evenly md:flex-row  ">
+                <div class="w-1/5">
+                 <!--suppot-->
+               <div class="flex flex-col gap-2">
+                <h1 class="text-black font-mullish text-3xl">Support</h1>
+                <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Product Support</p>
+                <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Contact Support</p>
+
+                <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Shipping Information</p>
+
+                <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Refund Policy</p>
+
+                <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">HP/HYPERX</p>
+
+
+                </div>
+            </div>
+                 <!--Company-->
+                <div class="w-1/5">
+                <div class="flex flex-col gap-2">
+                    <h1 class="text-black font-mullish text-3xl">Company</h1>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">About HyperX</p>
+
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">About HP</p>
+
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Carres</p>
+
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Social Impact</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Press</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Privacy</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Terms of Use</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Limited warranty</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Accessibility</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Use of Cookies</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Personal Data Right</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Terms of Service</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Refund policy</p>
+
+
+                </div>
+            </div>
+                 <!--other resources-->
+                <div class="flex flex-col gap-2 w-1/5">
+                    <h1 class="text-black font-mullish text-3xl">Other Resources</h1>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">NGENUITY Software</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Blog</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Partner Program</p>
+                    <p class="hover:text-red-500 transition-all duration-200 cursor-pointer ">Student Discount</p>
+
+
+                </div>
+                <!-- <img src="./image/mancatching.png" width="25%" height="100%"    alt="hyperx" class="absolute left-1/6 ">
+            -->
+                
+            </div>
+            
+         </div>
+
+    </footer>
+
+  
+   
+ </div>
+    
+</body>
+</html>
